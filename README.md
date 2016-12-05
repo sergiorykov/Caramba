@@ -1,7 +1,7 @@
 ﻿# Caramba
 Name generator for unit tests. 
 
-It allows to provide simple rules to generate any pseudo natural values for your unit tests/specs.
+It allows to generate any pseudo natural string values for your unit tests/specs. Especially it'll be extremely useful for load tests when you need to fill your database with data looks like real one. See examples to get an idea of the library.
 
 It's a great companion to [AutoFixture](https://github.com/AutoFixture/AutoFixture).
 
@@ -61,4 +61,13 @@ public static class BuiltinNames
             .Then(Name.From(Index.Forward(till)).WithPadding(5));
     }
 }
+```
+
+### How to generate email
+``` csharp
+var email = Name.Mix("Jake", "John", "Lisa")
+    .Then(Name.From(Index.Forward(1000)).WithPadding(4))
+    .Then("@")
+    .Then(Name.Mix("hotmail.com", "google.com", "yahoo.com"));
+var sample = email.Next();
 ```
