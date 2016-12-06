@@ -11,7 +11,7 @@ namespace Caramba
 
             int till = (int)Math.Pow(10, digits);
             return Name.From(prefix)
-                .Then(Name.From(Index.Forward(till)).WithPadding(5));
+                .Then(Name.From(Index.Range(till)).WithPadding(digits));
         }
     }
 }

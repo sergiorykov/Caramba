@@ -1,4 +1,6 @@
-﻿namespace Caramba
+﻿using System;
+
+namespace Caramba
 {
     public class OffsetIndexGenerator : IIndexGenerator
     {
@@ -7,6 +9,9 @@
 
         public OffsetIndexGenerator(int offset, IIndexGenerator generator)
         {
+            if (generator == null)
+                throw new ArgumentNullException(nameof(generator));
+
             _offset = offset;
             _generator = generator;
         }

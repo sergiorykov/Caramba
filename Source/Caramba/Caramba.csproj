@@ -42,7 +42,7 @@
     <Compile Include="Sources\CombinedNameSource.cs" />
     <Compile Include="Sources\ConstStringNameSource.cs" />
     <Compile Include="Sources\DictionaryNameSource.cs" />
-    <Compile Include="Generators\ForwardIndexGenerator.cs" />
+    <Compile Include="Generators\RangeIndexGenerator.cs" />
     <Compile Include="IIndexGenerator.cs" />
     <Compile Include="INameSource.cs" />
     <Compile Include="Index.cs" />

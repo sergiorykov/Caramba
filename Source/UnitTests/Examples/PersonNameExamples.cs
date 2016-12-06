@@ -10,26 +10,26 @@ namespace UnitTests.Examples
         [Fact]
         public void CompletePersonName()
         {
-            var ladyName = Name.From("Jill", "Janette", "Jane", "Jinny");
-            var ladyTitle = Name.Mix("mrs", "ms", "dr");
+            var ladyName = Name.Range("Jill", "Janette", "Jane", "Jinny");
+            var ladyTitle = Name.Random("mrs", "ms", "dr");
 
-            var gentelmanName = Name.From("John", "Jack", "Jamey", "Joshua");
-            var gentelmanTitle = Name.Mix("mr", "dr", "sir", "colonel");
+            var gentlemanName = Name.Range("John", "Jack", "Jamey", "Joshua");
+            var gentlemanTitle = Name.Random("mr", "dr", "sir", "colonel");
 
             var lady = ladyTitle
                 .Then(" ")
                 .Then(ladyName)
-                .Then(Name.From(Index.Forward(50)));
+                .Then(Name.From(Index.Range(50)));
 
-            var gentelman = gentelmanTitle
+            var gentleman = gentlemanTitle
                 .Then(" ")
-                .Then(gentelmanName)
-                .Then(Name.From(Index.Forward(50)));
+                .Then(gentlemanName)
+                .Then(Name.From(Index.Range(50)));
 
-            var firstName = lady.Or(gentelman);
+            var firstName = lady.Or(gentleman);
 
-            var lastName = Name.Mix("Nixon", "Obama", "Bush")
-                .Then(Name.From(Index.Forward(100)).WithPadding(3));
+            var lastName = Name.Random("Nixon", "Obama", "Bush")
+                .Then(Name.From(Index.Range(100)).WithPadding(3));
 
             var personName = firstName.Then(" ", lastName);
 

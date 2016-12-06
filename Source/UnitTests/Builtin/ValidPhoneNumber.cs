@@ -11,7 +11,7 @@ namespace UnitTests.Builtin
             _nameSource = BuiltinNames.PhoneNumber(Prefix, Digits);
         }
 
-        private const string Prefix = "+7926123";
+        private const string Prefix = "+7 926 00";
         private const int Digits = 4;
 
         private readonly INameSource _nameSource;

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Threading;
 
 namespace Caramba
 {
@@ -22,12 +21,10 @@ namespace Caramba
         {
             _names = new List<string>(names ?? new List<string>());
             if (_names.Count == 0)
-            {
                 throw new ArgumentNullException(nameof(names));
-            }
 
-            _generator = type == DictionaryNameSelectionType.OneByOne 
-                ? (IIndexGenerator)new ForwardIndexGenerator(_names.Count) 
+            _generator = type == DictionaryNameSelectionType.OneByOne
+                ? (IIndexGenerator) new RangeIndexGenerator(_names.Count)
                 : new RandomIndexGenerator(_names.Count);
         }
 

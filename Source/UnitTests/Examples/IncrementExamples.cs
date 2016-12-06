@@ -4,14 +4,14 @@ using Xunit;
 
 namespace UnitTests.Examples
 {
-    public class PhoneNumberExamples
+    public class IncrementExamples
     {
         [Fact]
         public void CompletePhoneNumber()
         {
-            var phoneNumber = BuiltinNames.PhoneNumber("+7 926 00", 5);
+            var source = Name.From(Index.Range(10, 100000)).WithPadding(5);
 
-            var sample = phoneNumber.Next();
+            var sample = source.Next();
             sample.ShouldNotBeNullOrEmpty();
         }
     }
