@@ -46,8 +46,9 @@ var names = Enumerable.Range(0, 1000)
 ### How to generate phone numbers
 
 ``` csharp
-var phoneNumber = BuiltinNames.PhoneNumber("+7 926 00", 5);
+var phoneNumber = BuiltinNames.PhoneNumber("+7 926 ", 7);
 var sample = phoneNumber.Next();
+Console.WriteLine(sample); // +7 926 0012345
 ```
 
 It has pretty simple implementation
@@ -56,12 +57,12 @@ public static class BuiltinNames
 {
     public static INameSource PhoneNumber(string prefix, int digits)
     {
-        if ((digits <= 0) || (digits > 12))
-            throw new ArgumentOutOfRangeException(nameof(digits), "should be less then or equal to 12");
+        if ((digits <= 0) || (digits > 20))
+            throw new ArgumentOutOfRangeException(nameof(digits), "should be less then or equal to 20");
 
         int till = (int)Math.Pow(10, digits);
         return Name.From(prefix)
-            .Then(Name.From(Index.Forward(till)).WithPadding(5));
+            .Then(Name.From(Index.Forward(till)).WithPadding(digits));
     }
 }
 ```
