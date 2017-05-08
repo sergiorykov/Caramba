@@ -1,4 +1,7 @@
-﻿# Caramba
+# Caramba
+
+[![NuGet Badge](https://buildstats.info/nuget/Caramba)](https://www.nuget.org/packages/Caramba/) [![License MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT) [![Build status](https://ci.appveyor.com/api/projects/status/h9jq50928otg2dkw?svg=true)](https://ci.appveyor.com/project/sergiorykov/caramba)
+
 Name generator for unit tests. 
 
 It allows to generate any pseudo natural string values for your unit tests/specs. Especially it'll be extremely useful for load tests when you need to fill your database with data looks like real one. See examples to get an idea of the library.
@@ -71,3 +74,8 @@ var email = Name.Mix("Jake", "John", "Lisa")
     .Then(Name.Mix("hotmail.com", "google.com", "yahoo.com"));
 var sample = email.Next();
 ```
+
+License
+-------
+
+All contents of this package are licensed under the [MIT license](https://opensource.org/licenses/MIT).
