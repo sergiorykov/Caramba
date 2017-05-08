@@ -1,29 +1,19 @@
 # from https://github.com/AutoMapper/AutoMapper/blob/master/.gitignore
-release/
-scripts/
+# from https://gist.github.com/davidfowl/ed7564297c61fe9ab814#gitignore
+
+[Oo]bj/
+[Bb]in/
+
+.nuget/
+_ReSharper.*
+packages/
 artifacts/
-.dotnet
-TestResults/
-*.suo
 *.user
-bin
-Bin
-obj
-_ReSharper*
-*.csproj.user
-*.resharper.user
 *.suo
-*.cache
-TestResult.xml
-AppPackages/
-*.bak
-packages
-*.orig
-*.DotSettings
-*.ide/
-.nuget
-project.lock.json
-.vs
+*.userprefs
+*DS_Store
+
+.vs/
 
 # JetBrains Rider
 .idea/

@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26403.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caramba", "Source\Caramba\Caramba.csproj", "{FD4215A3-581E-41F2-9A04-2918AE6AA237}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caramba", "src\Caramba\Caramba.csproj", "{FD4215A3-581E-41F2-9A04-2918AE6AA237}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "Source\UnitTests\UnitTests.csproj", "{F7610544-1FC2-44CC-8A12-8282B098CF90}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "tests\UnitTests\UnitTests.csproj", "{F7610544-1FC2-44CC-8A12-8282B098CF90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
