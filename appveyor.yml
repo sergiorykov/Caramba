@@ -14,7 +14,7 @@ artifacts:
   name: All Nupkg
 deploy:
 - provider: Environment
-  name: NuGet
+  name: Caramba
   on:
     appveyor_repo_tag: true
 notifications:
