@@ -1,7 +1,30 @@
-/*.user
-/packages
-
-bin
-obj
-
+# from https://github.com/AutoMapper/AutoMapper/blob/master/.gitignore
+release/
+scripts/
+artifacts/
+.dotnet
+TestResults/
 *.suo
+*.user
+bin
+Bin
+obj
+_ReSharper*
+*.csproj.user
+*.resharper.user
+*.suo
+*.cache
+TestResult.xml
+AppPackages/
+*.bak
+packages
+*.orig
+*.DotSettings
+*.ide/
+.nuget
+project.lock.json
+.vs
+
+# JetBrains Rider
+.idea/
+*.sln.iml
