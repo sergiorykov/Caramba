@@ -4,10 +4,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0-preview-20170502-03" />
     <PackageReference Include="xunit" Version="2.3.0-beta1-build3642" />   
     <DotNetCliToolReference Include="dotnet-xunit" Version="2.3.0-beta1-build3642" />
 
     <PackageReference Include="Shouldly" Version="2.8.2.0" />
+
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.0-beta1-build1309" />
   </ItemGroup>
 
   <ItemGroup>
