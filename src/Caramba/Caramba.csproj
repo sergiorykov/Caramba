@@ -4,7 +4,7 @@
     <Description>Name generator for unit tests</Description>
     <Authors>Sergio Rykov</Authors>
 	<Copyright>2016-2017 © Sergio Rykov</Copyright>
-	<VersionPrefix>0.2.0</VersionPrefix>
+	<VersionPrefix>0.3.1</VersionPrefix>
 		
     <TargetFrameworks>net45;netstandard1.3</TargetFrameworks>      
 	<AssemblyName>Caramba</AssemblyName>

@@ -1,4 +1,4 @@
-# Caramba
+# ![Caramba](https://github.com/sergiorykov/Caramba/blob/master/docs/carambola64.png) Caramba
 
 [![NuGet Badge](https://buildstats.info/nuget/Caramba)](https://www.nuget.org/packages/Caramba/) [![License MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT) [![Build status](https://ci.appveyor.com/api/projects/status/h9jq50928otg2dkw?svg=true)](https://ci.appveyor.com/project/sergiorykov/caramba)
 
