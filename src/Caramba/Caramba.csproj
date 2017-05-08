@@ -22,5 +22,8 @@
 		
         <RepositoryType>git</RepositoryType>
         <RepositoryUrl>https://github.com/sergiorykov/Caramba</RepositoryUrl>        
-    </PropertyGroup>	
+    </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Caramba.csproj.DotSettings" />
+  </ItemGroup>	
 </Project>
