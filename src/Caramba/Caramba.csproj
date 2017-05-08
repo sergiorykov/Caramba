@@ -4,7 +4,7 @@
     <Description>Name generator for unit tests</Description>
     <Authors>Sergio Rykov</Authors>
 	<Copyright>2016-2017 © Sergio Rykov</Copyright>
-	<VersionPrefix>0.3.1</VersionPrefix>
+	<VersionPrefix>0.3.2</VersionPrefix>
 		
     <TargetFrameworks>net45;netstandard1.3</TargetFrameworks>      
 	<AssemblyName>Caramba</AssemblyName>
@@ -16,7 +16,7 @@
     <PackageId>Caramba</PackageId>
     <PackageTags>name;generator;unittests</PackageTags>    
         <PackageReleaseNotes>https://github.com/sergiorykov/Caramba/releases</PackageReleaseNotes>
-        <PackageIconUrl>https://github.com/sergiorykov/Caramba/blob/master/docs/carambola.png</PackageIconUrl>
+        <PackageIconUrl>https://github.com/sergiorykov/Caramba/raw/master/docs/carambola128.png</PackageIconUrl>
         <PackageProjectUrl>https://github.com/sergiorykov/Caramba</PackageProjectUrl>
         <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
 		
