@@ -1,0 +1,27 @@
+version: '{build}-{branch}'
+pull_requests:
+  do_not_increment_build_number: true
+image: Visual Studio 2017
+configuration: Release
+platform: Any CPU
+clone_folder: c:\projects\caramba
+build_script:
+- cmd: dotnet restore && dotnet pack src\Caramba -c Release
+test_script:
+- cmd: cd tests\UnitTests && dotnet xunit
+artifacts:
+- path: '**\*.nupkg'
+  name: All Nupkg
+deploy:
+- provider: Environment
+  name: NuGet
+  on:
+    appveyor_repo_tag: true
+notifications:
+- provider: Email
+  to:
+  - sergior@bk.ru
+  subject: 'Build {{status}}: {{projectName}} {{buildVersion}}'
+  on_build_success: false
+  on_build_failure: true
+  on_build_status_changed: true
