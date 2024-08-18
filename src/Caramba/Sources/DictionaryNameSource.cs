@@ -29,7 +29,7 @@ namespace Caramba
         }
 
         private string DebuggerDisplay =>
-            $"Dictionary with {_names} names, like: {string.Join(", ", _names.Take(3))} ...";
+            $"Dictionary with {_names} names, like: {string.Join(", ", _names.Take(3))}";
 
         public string Next()
         {
